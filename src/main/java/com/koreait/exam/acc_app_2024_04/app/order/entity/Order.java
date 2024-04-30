@@ -70,7 +70,7 @@ public class Order extends BaseEntity {
     public String getName() {
         String name = orderItems.get(0).getProduct().getSubject();
 
-        if (orderItems.size() > 1) {
+        if ( orderItems.size() > 1 ) {
             name += " 외 %d곡".formatted(orderItems.size() - 1);
         }
 
